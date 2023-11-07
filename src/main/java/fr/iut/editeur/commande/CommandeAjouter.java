@@ -5,9 +5,7 @@ import fr.iut.editeur.document.Document;
 public class CommandeAjouter extends CommandeDocument {
 
 
-    public CommandeAjouter(Document document, String[] parameters) {
-        super(document, parameters);
-    }
+    public CommandeAjouter(Document document, String[] parameters) {super(document, parameters);}
 
     @Override
     public void executer() {

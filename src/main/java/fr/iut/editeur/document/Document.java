@@ -34,4 +34,7 @@ public class Document {
         t = t.toUpperCase();
         remplacer(start,end,t);
     }
+    public void supprimer(int start, int end){
+        remplacer(start, end, "");
+    }
 }

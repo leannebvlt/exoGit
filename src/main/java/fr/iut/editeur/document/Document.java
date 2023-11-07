@@ -1,7 +1,5 @@
 package fr.iut.editeur.document;
 
-import static com.sun.tools.javac.util.StringUtils.toUpperCase;
-
 public class Document {
 
     private String texte;
@@ -32,8 +30,8 @@ public class Document {
         texte = leftPart + remplacement + rightPart;
     }
     public void majuscules(int start, int end){
-        texte.substring(start, end);
-        toUpperCase(texte);
-        remplacer(start,end,texte);
+        String t = texte.substring(start, end);
+        t = t.toUpperCase();
+        remplacer(start,end,t);
     }
 }

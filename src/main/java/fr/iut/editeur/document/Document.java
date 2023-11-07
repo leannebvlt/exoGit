@@ -37,4 +37,7 @@ public class Document {
     public void supprimer(int start, int end){
         remplacer(start, end, "");
     }
+    public void clear(){
+        supprimer(0, texte.length());
+    }
 }

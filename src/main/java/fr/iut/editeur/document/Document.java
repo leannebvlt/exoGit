@@ -38,6 +38,6 @@ public class Document {
         remplacer(start, end, "");
     }
     public void clear(){
-        supprimer(0, texte.length());
+        remplacer(0, texte.length(), "p");
     }
 }

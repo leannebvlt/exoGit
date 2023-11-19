@@ -3,7 +3,9 @@ package fr.iut.editeur.commande;
 import fr.iut.editeur.document.Document;
 
 public abstract class CommandeDocument implements Commande {
-
+    /**
+     * Description de la propriété
+     */
     protected Document document;
 
     protected String[]parameters;

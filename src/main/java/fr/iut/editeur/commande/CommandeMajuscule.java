@@ -1,6 +1,10 @@
 package fr.iut.editeur.commande;
 
 import fr.iut.editeur.document.Document;
+/**
+ * classe pour mettre en majuscule du
+ * texte selon un début et une fin
+ */
 public class CommandeMajuscule extends CommandeDocument {
     public CommandeMajuscule(Document document, String[] parameters) {
         super(document, parameters);

@@ -1,5 +1,9 @@
 package fr.iut.editeur.commande;
 import fr.iut.editeur.document.Document;
+
+/**
+ * classe pour supprimer du texte selon un début et une fin
+ */
 public class CommandeSupprimer extends CommandeDocument{
     public CommandeSupprimer(Document document, String[] parameters) {
         super(document, parameters);

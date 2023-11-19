@@ -1,5 +1,11 @@
 package fr.iut.editeur.document;
 
+import fr.iut.editeur.commande.CommandeDocument;
+import fr.iut.editeur.commande.CommandeMajuscule;
+
+/**
+ * Description de la classe
+ */
 public class Document {
 
     private String texte;
@@ -29,6 +35,12 @@ public class Document {
         String rightPart = texte.substring(end);
         texte = leftPart + remplacement + rightPart;
     }
+    /**
+     * Description de la méthode
+     * Il peut être intéressant de consulter la méthode {@link CommandeMajuscule#executer()} ()} !
+     * @param start début du texte à mettre en majuscule
+     * @param end fin du texte à mettre en majuscule
+     */
     public void majuscules(int start, int end){
         String t = texte.substring(start, end);
         t = t.toUpperCase();

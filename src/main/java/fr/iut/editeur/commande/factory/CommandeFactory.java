@@ -24,6 +24,8 @@ public class CommandeFactory {
             case "supprimer" : return new CommandeSupprimer(document, parameters);
             case "clear" : return new CommandeClear(document, parameters);
             case "inserer" : return new CommandeInserer(document, parameters);
+            case "undo" : return new CommandeUndo(document, parameters);
+            case "redo" : return new CommandeRedo(document, parameters);
             default: return null;
         }
     }
